@@ -36,7 +36,7 @@ def read_input(filename):
 
 def process_data(dataframe):
     print('Processing dataset...', end='')
-    res = dataframe.groupby(['PatientID', 'Route']) \
+    res = dataframe.groupby(['PatientID', 'Route', 'ParameterName']) \
         .agg({'TotaalGegevenDosis': 'sum'})
     print('\tprocessed ' + str(dataframe.shape[0]) + ' rows')
 
