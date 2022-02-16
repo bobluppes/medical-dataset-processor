@@ -14,8 +14,8 @@ class MyParser(argparse.ArgumentParser):
 
 
 parser = MyParser(description='Process a medical dataset.')
-parser.add_argument('filename', metavar='f', type=str,
-                    help='the filename of the input dataset (.csv)')
+parser.add_argument('filename', metavar='f', type=str, nargs='?',
+                    help='the filename of the input dataset (.csv)', default='data.csv')
 
 
 def read_input(filename):
@@ -36,7 +36,7 @@ def read_input(filename):
 
 def process_data(dataframe):
     print('Processing dataset...', end='')
-    res = dataframe.groupby(['PatientID', 'Route']) \
+    res = dataframe.groupby(['PatientID', 'Route', 'ParameterName']) \
         .agg({'TotaalGegevenDosis': 'sum'})
     print('\tprocessed ' + str(dataframe.shape[0]) + ' rows')
 

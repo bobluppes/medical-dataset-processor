@@ -1,5 +1,5 @@
 # Medical Dataset Processor
-A quick (and dirty) pandas processing script for a very specific medical dataset.
+A quick (and dirty) pandas processing script for a very specific medical dataset. For a guide on running in a restricted environment without shell access see [here](RESTRICTED_ENV.md).
 
 ## Requirements
 * Python3
