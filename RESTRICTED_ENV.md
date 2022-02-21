@@ -14,7 +14,7 @@ The IDLE does not allow the use of program arguments. Therefore, the name of the
 ## Running the script
 The following are the *rough* steps required to run the script in the IDLE. These steps are not tested. For specific help see [Python IDLE Manual](https://docs.python.org/3/library/idle.html) and [how to run a python script in IDLE](https://stackoverflow.com/a/17247565).
 
-1. The required Python packages in `requirements.txt` (namely Pandas) need to be installed on your system. Without access to *pip*, this should probably be done by your system administrator or IT department.
+1. The required Python packages in `requirements.txt` (namely Pandas) need to be installed on your system. Without access to *pip*, this should probably be done by your system administrator or IT department. `pip install -r requirements.txt`
 2. Open the script in IDLE: `File` -> `Open` -> select `process_dataset.py` from the folder you just extracted
 3. Run the script: `Run` -> `Run Module` command (shortcut F5)
 4. The results can be found in `result.csv`
